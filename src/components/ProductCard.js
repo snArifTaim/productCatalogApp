@@ -6,7 +6,7 @@ const ProductCard = ({ product, onPress }) => {
         <TouchableOpacity style={styles.card} onPress={onPress}>
             <Image source={{ uri: product.image }} style={styles.image} />
             <View style={styles.infoContainer}>
-                <Text style={styles.name}>{product.name}</Text>
+                <Text style={styles.name} numberOfLines={1}>{product.name}</Text>
                 <Text style={styles.price}>{product.price}</Text>
             </View>
         </TouchableOpacity>
@@ -16,36 +16,35 @@ const ProductCard = ({ product, onPress }) => {
 const styles = StyleSheet.create({
     card: {
         backgroundColor: '#fff',
-        borderRadius: 8,
+        borderRadius: 12,
         marginBottom: 16,
+        marginHorizontal: 8,
+        flex: 1,
         overflow: 'hidden',
-        shadowColor: '#000', // iOS shadow
+        shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.1,
         shadowRadius: 4,
-        flexDirection: 'row',
-        alignItems: 'center',
-        padding: 10,
+        elevation: 3, // Android shadow
     },
     image: {
-        width: 80,
-        height: 80,
-        borderRadius: 8,
-        marginRight: 16,
+        width: '100%',
+        height: 150,
+        backgroundColor: '#f9f9f9',
     },
     infoContainer: {
-        flex: 1,
+        padding: 12,
     },
     name: {
-        fontSize: 16,
+        fontSize: 14,
         fontWeight: 'bold',
         marginBottom: 4,
         color: '#333',
     },
     price: {
         fontSize: 14,
-        color: '#888',
-        fontWeight: '600',
+        color: '#007AFF',
+        fontWeight: '700',
     },
 });
 
