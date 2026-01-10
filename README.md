@@ -74,7 +74,6 @@ npx expo start
 ## 📜 License
 
 Created as part of a React Native assignment. Feel free to use and modify for your own learning!
-<<<<<<< HEAD
 =======
 
 ## 👨‍💻 Author
@@ -85,4 +84,3 @@ MD. Arif Islam
 
  🔗 [GitHub](https://github.com/snArifTaim/) [LinkedIn](https://www.linkedin.com/in/sn-arif-dev/)
 
->>>>>>> 0c4eea94c5fa6de0a8db4836be0f664c349cd853
